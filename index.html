@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky Torn | Official Author Website</title>
+    <style>
+        :root {
+            --primary: #1a252f;
+            --accent: #2c3e50;
+            --bg: #f4f6f7;
+            --card-bg: #ffffff;
+            --text: #333333;
+            --text-muted: #666666;
+            --badge-bg: #232f3e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Book Grid Layout */
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .book-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 1.25rem;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .book-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .book-genre {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #2563eb;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+        }
+
+        .book-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        /* Static Non-Clickable Badge */
+        .store-tag {
+            display: inline-block;
+            background-color: var(--badge-bg);
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            width: fit-content;
+            user-select: none;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ricky Torn</h1>
+        <p>Independent Author & Commercial Fiction Novelist</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About the Author</h2>
+            <p>Ricky Torn is a full-time independent writer specializing in high-stakes contemporary fiction and story-driven narrative sagas. Distributed primarily via Amazon Kindle Direct Publishing (KDP) and digital storefronts worldwide, Ricky's work focuses on complex character dynamics, fast-paced plotting, and immersive world-building.</p>
+        </section>
+
+        <!-- Published Works Section -->
+        <section id="books">
+            <h2>Featured Publications</h2>
+            <div class="book-grid">
+                
+                <!-- Book 1 -->
+                <div class="book-card">
+                    <div>
+                        <div class="book-title">Shadows Over Oakridge</div>
+                        <div class="book-genre">Contemporary Thriller</div>
+                        <p class="book-desc">A small-town investigative mystery following a retired detective who uncovers a web of local secrets after an unexpected disappearance.</p>
+                    </div>
+                    <span class="store-tag">Available on Amazon Kindle</span>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <div>
+                        <div class="book-title">The Midnight Echo</div>
+                        <div class="book-genre">Drama & Suspense</div>
+                        <p class="book-desc">A fast-paced suspense novel exploring the thin line between ambition and deception in the high-stakes world of corporate finance.</p>
+                    </div>
+                    <span class="store-tag">Available on Amazon Kindle</span>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="book-card">
+                    <div>
+                        <div class="book-title">Hearts in the Horizon</div>
+                        <div class="book-genre">Contemporary Romance</div>
+                        <p class="book-desc">An engaging, second-chance romance novel set against the backdrop of a coastal town restoration project.</p>
+                    </div>
+                    <span class="store-tag">Available on Amazon Kindle</span>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="book-card">
+                    <div>
+                        <div class="book-title">Protocol Seven</div>
+                        <div class="book-genre">Techno-Thriller</div>
+                        <p class="book-desc">When a cybersecurity specialist flags an unauthorized network signal, he uncovers a covert system operating in plain sight.</p>
+                    </div>
+                    <span class="store-tag">Available on Amazon Kindle</span>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="book-card">
+                    <div>
+                        <div class="book-title">Beyond the Ridge</div>
+                        <div class="book-genre">Action & Adventure</div>
+                        <p class="book-desc">An wilderness survival story following a expedition team forced to navigate harsh terrain after getting cut off from civilization.</p>
+                    </div>
+                    <span class="store-tag">Available on Amazon Kindle</span>
+                </div>
+
+                <!-- Book 6 -->
+                <div class="book-card">
+                    <div>
+                        <div class="book-title">Whispers at Dawn</div>
+                        <div class="book-genre">Mystery & Crime</div>
+                        <p class="book-desc">A cold-case investigator reopens a decade-old file when new evidence surfaces in a tranquil lakeside community.</p>
+                    </div>
+                    <span class="store-tag">Available on Amazon Kindle</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Rights & Inquiries -->
+        <section id="contact">
+            <h2>Rights & Business Contact</h2>
+            <div class="contact-info">
+                <p>For rights queries, distribution options, or general reader support, please direct correspondence to:</p>
+                <p><strong>Publisher / Author Representative:</strong> Ricky Torn Publishing</p>
+                <p><strong>Primary Platform:</strong> Amazon KDP (Global Distribution)</p>
+                <p><strong>Email:</strong> <a href="mailto:contact@rickytorn.com" style="color: #2563eb;">contact@rickytorn.com</a></p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Ricky Torn. All rights reserved. Distributed via Amazon KDP.
+    </footer>
+
+</body>
+</html>
